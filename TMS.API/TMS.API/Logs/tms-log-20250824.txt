@@ -1,0 +1,84 @@
+2025-08-24 18:05:44.278 +06:00 [INF] User profile is available. Using 'C:\Users\Ishani\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-24 18:05:45.663 +06:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-24 18:05:47.061 +06:00 [INF] Executed DbCommand (94ms) [Parameters=[@__normalizedName_0='ADMIN'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-08-24 18:05:47.211 +06:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='MANAGER'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-08-24 18:05:47.216 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='EMPLOYEE'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-08-24 18:05:47.236 +06:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='ADMIN@DEMO.COM'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-24 18:05:47.299 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='ADMIN'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-08-24 18:05:47.362 +06:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='25cef98f-b7b1-4381-bb68-86ead11b7270', @__p_1='6fe3a66f-c47c-4d45-8b5f-65d94d840319'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-08-24 18:05:47.386 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='MANAGER@DEMO.COM'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-24 18:05:47.393 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='MANAGER'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-08-24 18:05:47.399 +06:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='0f700efe-9156-43db-9669-bb851e5c57e9', @__p_1='5d6f83e6-aa24-407a-8766-7896d21edfdb'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-08-24 18:05:47.407 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='EMPLOYEE@DEMO.COM'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-24 18:05:47.411 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='EMPLOYEE'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-08-24 18:05:47.416 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='35852512-3783-460d-a967-58546aae290e', @__p_1='482fc376-3d28-4125-bcfa-b088d0dd3059'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-08-24 18:05:47.704 +06:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-24 18:05:48.031 +06:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-24 18:05:48.067 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-24 18:05:48.073 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-24 18:05:48.084 +06:00 [INF] No migrations were applied. The database is already up to date.
+2025-08-24 18:05:48.447 +06:00 [INF] Now listening on: https://localhost:7184
+2025-08-24 18:05:48.449 +06:00 [INF] Now listening on: http://localhost:5284
+2025-08-24 18:05:48.749 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-24 18:05:48.751 +06:00 [INF] Hosting environment: Development
+2025-08-24 18:05:48.753 +06:00 [INF] Content root path: D:\robin\selise\TMS.API\TMS.API

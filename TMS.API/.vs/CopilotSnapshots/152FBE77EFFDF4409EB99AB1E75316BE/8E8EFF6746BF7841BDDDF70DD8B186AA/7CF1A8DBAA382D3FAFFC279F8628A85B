@@ -1,0 +1,21 @@
+﻿using TMS.Application.features.Task.Get;
+using TMS.Infrastructure.Data;
+using Get = TMS.Application.features.Task.Get;
+using Task = TMS.Application.Entities.Task;
+
+namespace TMS.Infrastructure.Repositories
+{
+    public class TaskRepository : Get.IRepository
+    {
+        private readonly AppDbContext _dbContext;
+        public TaskRepository(AppDbContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
+
+        public List<Task> GetAllTasks(ResourseParameter resourse)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}

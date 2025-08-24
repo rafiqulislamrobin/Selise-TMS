@@ -1,0 +1,27 @@
+﻿using MediatR;
+using TMS.Application.Common.infra;
+using TMS.Application.Entities;
+
+namespace TMS.Application.features.User.Delete
+{
+    public class DeleteUserHandler : IRequestHandler<DeleteUserCommand, DeleteUserResponse>
+    {
+        private readonly IUnitOfWork _unitOfWork;
+        public DeleteUserHandler(IUnitOfWork unitOfWork)
+        {
+            _unitOfWork = unitOfWork;
+        }
+        public async Task<DeleteUserResponse> Handle(DeleteUserCommand request, CancellationToken cancellationToken)
+        {
+            var repo = _unitOfWork.Repository<User, int>();
+            var user = await repo.GetByIdAsync(request.Id);
+            if (user == null)
+            {
+                return new DeleteUserResponse { Success = false, Message = "User not found." };
+            }
+            await repo.DeleteAsync(user);
+            await _unitOfWork.CommitAsync();
+            return new DeleteUserResponse { Success = true, Message = "User deleted successfully." };
+        }
+    }
+}

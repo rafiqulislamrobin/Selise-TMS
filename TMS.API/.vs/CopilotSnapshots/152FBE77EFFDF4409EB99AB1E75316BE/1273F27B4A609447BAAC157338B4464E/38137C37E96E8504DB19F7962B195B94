@@ -1,0 +1,85 @@
+﻿using TMS.Application.Entities;
+using TMS.Application.features.User.Get;
+using TMS.Infrastructure.Data;
+using Get = TMS.Application.features.User.Get;
+using Post = TMS.Application.features.User.Post;
+using Delete = TMS.Application.features.User.Delete;
+using Put = TMS.Application.features.User.Put;
+
+namespace TMS.Infrastructure.Repositories
+{
+    public class UserRepository : Get.IRepository, Post.IRepository, Delete.IRepository, Put.IRepository
+    {
+        private readonly AppDbContext _dbContext;
+        public UserRepository(AppDbContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
+
+        public System.Threading.Tasks.Task AddAsync(User user)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Delete(User user)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<User> GetByIdAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<User> GetUsers(ResourseParameter resourse)
+        {
+            var query = _dbContext.Users.AsQueryable();
+
+            // Search
+            if (!string.IsNullOrWhiteSpace(resourse.SearchQuery))
+            {
+                var search = resourse.SearchQuery.Trim().ToLower();
+                query = query.Where(c => c.FullName.ToLower().Contains(search));
+            }
+
+            // OrderBy
+            if (!string.IsNullOrWhiteSpace(resourse.OrderBy))
+            {
+                switch (resourse.OrderBy.ToLower())
+                {
+                    case "name":
+                        query = query.OrderBy(c => c.FullName);
+                        break;
+                    case "email":
+                        query = query.OrderBy(c => c.Email);
+                        break;
+                    case "role":
+                        query = query.OrderBy(c => c.Role);
+                        break;
+                    case "id":
+                        query = query.OrderBy(c => c.Id);
+                        break;
+                    default:
+                        query = query.OrderBy(c => c.FullName);
+                        break;
+                }
+            }
+            else
+            {
+                query = query.OrderBy(c => c.FullName);
+            }
+
+            // Pagination
+            int pageNumber = resourse.PageNumber > 0 ? resourse.PageNumber : 1;
+            int pageSize = resourse.PageSize > 0 ? resourse.PageSize : 10;
+            query = query.Skip((pageNumber - 1) * pageSize).Take(pageSize);
+
+            return query.ToList();
+        }
+
+        public bool Update(User user)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}

@@ -1,0 +1,36 @@
+﻿using TMS.Application.Common.infra;
+using MediatR;
+using BCrypt.Net;
+
+namespace TMS.Application.features.User.Post
+{
+    public class CreateUserHandler : IRequestHandler<CreateUserCommand, CreateUserResponse>
+    {
+        private readonly IUnitOfWork _unitOfWork;
+        public CreateUserHandler(IUnitOfWork unitOfWork)
+        {
+            _unitOfWork = unitOfWork;
+        }
+        public async Task<CreateUserResponse> Handle(CreateUserCommand request, CancellationToken cancellationToken)
+        {
+            var passwordHash = BCrypt.Net.BCrypt.HashPassword(request.Password);
+            var user = new Entities.User(request.FullName, request.Email, request.Role, passwordHash);
+            await _unitOfWork.Repository<Entities.User, int>().AddAsync(user);
+
+            if (await _unitOfWork.CommitAsync() > 0)
+            {
+                return new CreateUserResponse
+                {
+                    Id = user.Id,
+                    Name = user.FullName,
+                    Email = user.Email,
+                    Role = user.Role
+                };
+            }
+            else
+            {
+                throw new InvalidOperationException("Failed to create User.");
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+D:\robin\selise\TMS.API\TMS.Application\obj\Debug\net9.0\TMS.Application.csproj.AssemblyReference.cache
+D:\robin\selise\TMS.API\TMS.Application\obj\Debug\net9.0\TMS.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\robin\selise\TMS.API\TMS.Application\obj\Debug\net9.0\TMS.Application.AssemblyInfoInputs.cache
+D:\robin\selise\TMS.API\TMS.Application\obj\Debug\net9.0\TMS.Application.AssemblyInfo.cs
+D:\robin\selise\TMS.API\TMS.Application\obj\Debug\net9.0\TMS.Application.csproj.CoreCompileInputs.cache
+D:\robin\selise\TMS.API\TMS.Application\bin\Debug\net9.0\TMS.Application.deps.json
+D:\robin\selise\TMS.API\TMS.Application\bin\Debug\net9.0\TMS.Application.dll
+D:\robin\selise\TMS.API\TMS.Application\bin\Debug\net9.0\TMS.Application.pdb
+D:\robin\selise\TMS.API\TMS.Application\obj\Debug\net9.0\TMS.Application.dll
+D:\robin\selise\TMS.API\TMS.Application\obj\Debug\net9.0\refint\TMS.Application.dll
+D:\robin\selise\TMS.API\TMS.Application\obj\Debug\net9.0\TMS.Application.pdb
+D:\robin\selise\TMS.API\TMS.Application\obj\Debug\net9.0\ref\TMS.Application.dll

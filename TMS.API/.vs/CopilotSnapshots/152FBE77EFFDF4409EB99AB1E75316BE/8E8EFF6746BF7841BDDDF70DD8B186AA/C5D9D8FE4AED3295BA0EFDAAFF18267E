@@ -1,0 +1,34 @@
+﻿using TMS.Application.Common.infra;
+using MediatR;
+
+namespace TMS.Application.features.User.Post
+{
+    public class CreateUserHandler : IRequestHandler<CreateUserCommand, CreateUserResponse>
+    {
+        private readonly IUnitOfWork _unitOfWork;
+        public CreateUserHandler(IUnitOfWork unitOfWork)
+        {
+            _unitOfWork = unitOfWork;
+        }
+        public async Task<CreateUserResponse> Handle(CreateUserCommand request, CancellationToken cancellationToken)
+        {
+            var User = new Entities.User(request.FullName, request.Email, request.Role);
+            await _unitOfWork.Repository<Entities.User, int>().AddAsync(User);
+
+            if (await _unitOfWork.CommitAsync() > 0)
+            {
+                return new CreateUserResponse
+                {
+                    Id = User.Id,
+                    Name = User.FullName,
+                    Email = User.Email,
+                    Role = User.Role
+                };
+            }
+            else
+            {
+                throw new InvalidOperationException("Failed to create User.");
+            }
+        }
+    }
+}

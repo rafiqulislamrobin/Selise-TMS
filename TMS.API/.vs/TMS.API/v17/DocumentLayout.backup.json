@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\robin\\selise\\TMS.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D3ADBDBB-10FA-4BD4-BD72-029D425B9D90}|TMS.API\\TMS.API.csproj|d:\\robin\\selise\\tms.api\\tms.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3ADBDBB-10FA-4BD4-BD72-029D425B9D90}|TMS.API\\TMS.API.csproj|solutionrelative:tms.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3ADBDBB-10FA-4BD4-BD72-029D425B9D90}|TMS.API\\TMS.API.csproj|d:\\robin\\selise\\tms.api\\tms.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3ADBDBB-10FA-4BD4-BD72-029D425B9D90}|TMS.API\\TMS.API.csproj|solutionrelative:tms.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3ADBDBB-10FA-4BD4-BD72-029D425B9D90}|TMS.API\\TMS.API.csproj|d:\\robin\\selise\\tms.api\\tms.api\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3ADBDBB-10FA-4BD4-BD72-029D425B9D90}|TMS.API\\TMS.API.csproj|solutionrelative:tms.api\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3ADBDBB-10FA-4BD4-BD72-029D425B9D90}|TMS.API\\TMS.API.csproj|d:\\robin\\selise\\tms.api\\tms.api\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3ADBDBB-10FA-4BD4-BD72-029D425B9D90}|TMS.API\\TMS.API.csproj|solutionrelative:tms.api\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3ADBDBB-10FA-4BD4-BD72-029D425B9D90}|TMS.API\\TMS.API.csproj|d:\\robin\\selise\\tms.api\\tms.api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3ADBDBB-10FA-4BD4-BD72-029D425B9D90}|TMS.API\\TMS.API.csproj|solutionrelative:tms.api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\robin\\selise\\TMS.API\\TMS.API\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "TMS.API\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\robin\\selise\\TMS.API\\TMS.API\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "TMS.API\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAABRwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T12:04:29.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\robin\\selise\\TMS.API\\TMS.API\\Program.cs",
+              "RelativeDocumentMoniker": "TMS.API\\Program.cs",
+              "ToolTip": "D:\\robin\\selise\\TMS.API\\TMS.API\\Program.cs*",
+              "RelativeToolTip": "TMS.API\\Program.cs*",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T12:03:48.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\robin\\selise\\TMS.API\\TMS.API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "TMS.API\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\robin\\selise\\TMS.API\\TMS.API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "TMS.API\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T11:57:51.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TaskController.cs",
+              "DocumentMoniker": "D:\\robin\\selise\\TMS.API\\TMS.API\\Controllers\\TaskController.cs",
+              "RelativeDocumentMoniker": "TMS.API\\Controllers\\TaskController.cs",
+              "ToolTip": "D:\\robin\\selise\\TMS.API\\TMS.API\\Controllers\\TaskController.cs",
+              "RelativeToolTip": "TMS.API\\Controllers\\TaskController.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAASwEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T11:57:50.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TeamController.cs",
+              "DocumentMoniker": "D:\\robin\\selise\\TMS.API\\TMS.API\\Controllers\\TeamController.cs",
+              "RelativeDocumentMoniker": "TMS.API\\Controllers\\TeamController.cs",
+              "ToolTip": "D:\\robin\\selise\\TMS.API\\TMS.API\\Controllers\\TeamController.cs",
+              "RelativeToolTip": "TMS.API\\Controllers\\TeamController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAASwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T11:57:31.374Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
