@@ -1,0 +1,66 @@
+﻿using Application.Entities;
+using Get =  Application.features.Customer.Get;
+using Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Application.features.Customer.Get;
+
+namespace Infrastructure.Repositories
+{
+    public class CustomerRepository : Get.IRepository
+    {
+        private readonly AppDbContext _dbContext;
+        public CustomerRepository(AppDbContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
+
+        public List<Customer> GetCustomers(ResourseParameter resourse)
+        {
+            var query = _dbContext.Customers.AsQueryable();
+
+            // Search
+            if (!string.IsNullOrWhiteSpace(resourse.SearchQuery))
+            {
+                var search = resourse.SearchQuery.Trim().ToLower();
+                query = query.Where(c => c.Name.ToLower().Contains(search));
+            }
+
+            // OrderBy
+            if (!string.IsNullOrWhiteSpace(resourse.OrderBy))
+            {
+                switch (resourse.OrderBy.ToLower())
+                {
+                    case "name":
+                        query = query.OrderBy(c => c.Name);
+                        break;
+                    case "id":
+                        query = query.OrderBy(c => c.Id);
+                        break;
+                    default:
+                        query = query.OrderBy(c => c.Name);
+                        break;
+                }
+            }
+            else
+            {
+                query = query.OrderBy(c => c.Name);
+            }
+
+            // Pagination
+            int pageNumber = resourse.PageNumber > 0 ? resourse.PageNumber : 1;
+            int pageSize = resourse.PageSize > 0 ? resourse.PageSize : 10;
+            query = query.Skip((pageNumber - 1) * pageSize).Take(pageSize);
+
+            return query.Select(c => new CustomerResponse
+            {
+                Id = c.Id,
+                Name = c.Name
+            }).ToList();
+        }
+    }
+}

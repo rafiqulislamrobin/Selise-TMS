@@ -1,0 +1,42 @@
+﻿using Application.features.Customer.Get;
+using Application.features.Customer.Post;
+using MediatR;
+using Microsoft.AspNetCore.Mvc;
+
+namespace WebApplication1.Controllers
+{
+    [Route("Dummy-project/api/[controller]")]
+    [ApiController]
+    public class CustomerController : Controller
+    {
+        private readonly IMediator _mediator;
+
+        public CustomerController(IMediator mediator)
+        {
+            _mediator = mediator;
+        }
+
+        [HttpGet("", Name = "GetCustomers")]
+        public async Task<IActionResult> GetCustomer([FromQuery] ResourseParameter resource)
+        {
+            var response = await _mediator.Send(new GetCustomerQuery(resource));
+            return Ok(response);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateCustomer([FromBody] CreateCustomerCommand command)
+        {
+            var response = await _mediator.Send(command);
+            return CreatedAtRoute("GetCustomers", new { }, response);
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateCustomer(Guid id, [FromBody] UpdateCustomerCommand command)
+        {
+            if (id != command.Id)
+                return BadRequest();
+            var response = await _mediator.Send(command);
+            return Ok(response);
+        }
+    }
+}

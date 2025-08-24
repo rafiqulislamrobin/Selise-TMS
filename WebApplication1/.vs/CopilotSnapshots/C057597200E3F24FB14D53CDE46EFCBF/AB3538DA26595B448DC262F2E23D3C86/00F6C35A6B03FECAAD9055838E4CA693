@@ -1,0 +1,27 @@
+﻿using Application.Enitities;
+using Get =  Application.features.Customer.Get;
+using Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Application.features.Customer.Get;
+
+namespace Infrastructure.Repositories
+{
+    public class CustomerRepository : Get.IRepository
+    {
+        private readonly AppDbContext _dbContext;
+        public CustomerRepository(AppDbContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
+
+        public List<CustomerResponse> GetCustomers(ResourseParameter resourse)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}
