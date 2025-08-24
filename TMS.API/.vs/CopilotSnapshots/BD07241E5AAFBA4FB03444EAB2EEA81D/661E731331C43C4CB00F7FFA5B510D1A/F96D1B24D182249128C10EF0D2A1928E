@@ -1,0 +1,11 @@
+﻿using System.Collections.Generic;
+using TMS.Application.Entities;
+
+namespace TMS.Application.features.Task.Get
+{
+    public interface IRepository
+    {
+        List<Entities.Task> GetTasks(int? teamId, int? assignedToUserId, int? status);
+        List<Entities.Task> GetAllTasks(ResourseParameter resourse);
+    }
+}

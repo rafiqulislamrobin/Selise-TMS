@@ -1,0 +1,62 @@
+using CSharpFunctionalExtensions;
+using Microsoft.EntityFrameworkCore;
+using TMS.Application.Common.infra;
+
+namespace TMS.Infrastructure.Data;
+
+public class Repository<T, TKey> : IRepository<T, TKey> where T : Entity<TKey>
+{
+    private readonly DbContext _context;
+
+    public Repository(DbContext context)
+    {
+        _context = context;
+    }
+
+    public async Task<T> GetByIdAsync(TKey id)
+    {
+        var entity = await _context.Set<T>().FindAsync(id);
+        return entity!;
+    }
+
+    public async Task<IReadOnlyList<T>> ListAllAsync()
+    {
+        return await _context.Set<T>().AsNoTracking().ToListAsync();
+    }
+
+    public async Task AddAsync(T entity)
+    {
+        await _context.Set<T>().AddAsync(entity);
+    }
+
+    public void AddRangeAsync(List<T> entities)
+    {
+        _context.Set<T>().AddRangeAsync(entities);
+    }
+
+    public void Update(T entity)
+    {
+        _context.Entry<T>(entity).State = EntityState.Detached;
+        _context.Set<T>().Update(entity);
+    }
+
+    public void UpdateRange(List<T> entities)
+    {
+        _context.Set<T>().UpdateRange(entities);
+    }
+
+    public void Delete(T entity)
+    {
+        _context.Set<T>().Remove(entity);
+    }
+
+    public IQueryable<T> Query()
+    {
+        return _context.Set<T>();
+    }
+
+    public void RemoveRange(List<T> entities)
+    {
+        _context.Set<T>().RemoveRange(entities);
+    }
+}

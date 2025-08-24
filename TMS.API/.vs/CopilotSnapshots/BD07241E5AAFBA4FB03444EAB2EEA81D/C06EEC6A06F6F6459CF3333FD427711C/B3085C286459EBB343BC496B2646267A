@@ -1,0 +1,42 @@
+﻿using Microsoft.EntityFrameworkCore;
+using TMS.Application.Common.Domain;
+using TMS.Application.Entities;
+using TMS.Infrastructure.Data.Configuration;
+
+namespace TMS.Infrastructure.Data;
+
+public class AppDbContext : DbContext
+{
+    public AppDbContext(DbContextOptions<AppDbContext> options)
+        : base(options)
+    {
+    }
+    public DbSet<User> Users { get; set; }
+    public DbSet<Team> Teams { get; set; }
+
+    public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
+    {
+        foreach (var entity in ChangeTracker.Entries<IAudit>())
+        {
+            if (entity.State is EntityState.Added or EntityState.Modified)
+            {
+                if (entity.State == EntityState.Modified)
+                {
+                    entity.Entity.SetModifiedOn(DateTime.UtcNow);
+                }
+
+                if (entity.State == EntityState.Added)
+                {
+                    entity.Entity.SetCreatedOn(DateTime.UtcNow);
+                }
+            }
+        }
+        return base.SaveChangesAsync(cancellationToken);
+    }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        new UserEntityConfiguration().Configure(modelBuilder.Entity<User>());
+        modelBuilder.Entity<Team>();
+    }
+}

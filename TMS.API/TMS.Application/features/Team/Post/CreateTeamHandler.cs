@@ -1,0 +1,27 @@
+using MediatR;
+using TMS.Application.Common.infra;
+using TMS.Application.Entities;
+
+namespace TMS.Application.features.Team.Post
+{
+    public class CreateTeamHandler : IRequestHandler<CreateTeamCommand, CreateTeamResponse>
+    {
+        private readonly IUnitOfWork _unitOfWork;
+        public CreateTeamHandler(IUnitOfWork unitOfWork)
+        {
+            _unitOfWork = unitOfWork;
+        }
+        public async Task<CreateTeamResponse> Handle(CreateTeamCommand request, CancellationToken cancellationToken)
+        {
+            var team = new Entities.Team(request.Name, request.Description);
+            await _unitOfWork.Repository<Entities.Team, int>().AddAsync(team);
+            await _unitOfWork.CommitAsync();
+            return new CreateTeamResponse
+            {
+                Id = team.Id,
+                Name = team.Name,
+                Description = team.Description
+            };
+        }
+    }
+}

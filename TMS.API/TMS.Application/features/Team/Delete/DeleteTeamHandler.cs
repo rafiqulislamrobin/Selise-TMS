@@ -1,0 +1,25 @@
+using MediatR;
+using TMS.Application.Common.infra;
+using TMS.Application.Entities;
+
+namespace TMS.Application.features.Team.Delete
+{
+    public class DeleteTeamHandler : IRequestHandler<DeleteTeamCommand, DeleteTeamResponse>
+    {
+        private readonly IUnitOfWork _unitOfWork;
+        public DeleteTeamHandler(IUnitOfWork unitOfWork)
+        {
+            _unitOfWork = unitOfWork;
+        }
+        public async Task<DeleteTeamResponse> Handle(DeleteTeamCommand request, CancellationToken cancellationToken)
+        {
+            var repo = _unitOfWork.Repository<Entities.Team, int>();
+            var team = await repo.GetByIdAsync(request.Id);
+            if (team == null)
+                return new DeleteTeamResponse { Success = false, Message = "Team not found." };
+            repo.Delete(team);
+            await _unitOfWork.CommitAsync();
+            return new DeleteTeamResponse { Success = true, Message = "Team deleted successfully." };
+        }
+    }
+}

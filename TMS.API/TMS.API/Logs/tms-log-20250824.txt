@@ -1,0 +1,1032 @@
+2025-08-24 18:05:44.278 +06:00 [INF] User profile is available. Using 'C:\Users\Ishani\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-24 18:05:45.663 +06:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-24 18:05:47.061 +06:00 [INF] Executed DbCommand (94ms) [Parameters=[@__normalizedName_0='ADMIN'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-08-24 18:05:47.211 +06:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='MANAGER'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-08-24 18:05:47.216 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='EMPLOYEE'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-08-24 18:05:47.236 +06:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='ADMIN@DEMO.COM'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-24 18:05:47.299 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='ADMIN'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-08-24 18:05:47.362 +06:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='25cef98f-b7b1-4381-bb68-86ead11b7270', @__p_1='6fe3a66f-c47c-4d45-8b5f-65d94d840319'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-08-24 18:05:47.386 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='MANAGER@DEMO.COM'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-24 18:05:47.393 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='MANAGER'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-08-24 18:05:47.399 +06:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='0f700efe-9156-43db-9669-bb851e5c57e9', @__p_1='5d6f83e6-aa24-407a-8766-7896d21edfdb'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-08-24 18:05:47.407 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='EMPLOYEE@DEMO.COM'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-24 18:05:47.411 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='EMPLOYEE'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-08-24 18:05:47.416 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='35852512-3783-460d-a967-58546aae290e', @__p_1='482fc376-3d28-4125-bcfa-b088d0dd3059'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-08-24 18:05:47.704 +06:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-24 18:05:48.031 +06:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-24 18:05:48.067 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-24 18:05:48.073 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-24 18:05:48.084 +06:00 [INF] No migrations were applied. The database is already up to date.
+2025-08-24 18:05:48.447 +06:00 [INF] Now listening on: https://localhost:7184
+2025-08-24 18:05:48.449 +06:00 [INF] Now listening on: http://localhost:5284
+2025-08-24 18:05:48.749 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-24 18:05:48.751 +06:00 [INF] Hosting environment: Development
+2025-08-24 18:05:48.753 +06:00 [INF] Content root path: D:\robin\selise\TMS.API\TMS.API
+2025-08-24 18:42:39.227 +06:00 [INF] User profile is available. Using 'C:\Users\Ishani\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-24 18:42:40.625 +06:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-24 18:42:42.075 +06:00 [INF] Executed DbCommand (99ms) [Parameters=[@__normalizedName_0='ADMIN'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-08-24 18:42:42.263 +06:00 [INF] Executed DbCommand (12ms) [Parameters=[@__normalizedName_0='MANAGER'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-08-24 18:42:42.281 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='EMPLOYEE'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-08-24 18:42:42.309 +06:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='ADMIN@DEMO.COM'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-24 18:42:42.422 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='ADMIN'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-08-24 18:42:42.481 +06:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='25cef98f-b7b1-4381-bb68-86ead11b7270', @__p_1='6fe3a66f-c47c-4d45-8b5f-65d94d840319'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-08-24 18:42:42.511 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='MANAGER@DEMO.COM'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-24 18:42:42.521 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='MANAGER'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-08-24 18:42:42.529 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='0f700efe-9156-43db-9669-bb851e5c57e9', @__p_1='5d6f83e6-aa24-407a-8766-7896d21edfdb'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-08-24 18:42:42.535 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='EMPLOYEE@DEMO.COM'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-24 18:42:42.543 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='EMPLOYEE'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-08-24 18:42:42.549 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='35852512-3783-460d-a967-58546aae290e', @__p_1='482fc376-3d28-4125-bcfa-b088d0dd3059'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-08-24 18:42:42.970 +06:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-24 18:42:43.396 +06:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-24 18:42:43.425 +06:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-24 18:42:43.431 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-24 18:42:43.441 +06:00 [INF] No migrations were applied. The database is already up to date.
+2025-08-24 18:42:43.825 +06:00 [INF] Now listening on: https://localhost:7184
+2025-08-24 18:42:43.827 +06:00 [INF] Now listening on: http://localhost:5284
+2025-08-24 18:42:44.111 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7184/swagger/index.html - null null
+2025-08-24 18:42:44.169 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-24 18:42:44.171 +06:00 [INF] Hosting environment: Development
+2025-08-24 18:42:44.173 +06:00 [INF] Content root path: D:\robin\Selise-TMS\TMS.API\TMS.API
+2025-08-24 18:42:44.493 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7184/swagger/index.html - 200 null text/html;charset=utf-8 391.7788ms
+2025-08-24 18:42:44.591 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7184/_vs/browserLink - null null
+2025-08-24 18:42:44.591 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7184/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-24 18:42:44.628 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7184/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 36.6761ms
+2025-08-24 18:42:44.790 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7184/_vs/browserLink - 200 null text/javascript; charset=UTF-8 198.5505ms
+2025-08-24 18:42:44.968 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7184/swagger/v1/swagger.json - null null
+2025-08-24 18:42:45.003 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7184/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 34.7325ms
+2025-08-24 18:42:49.048 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7184/swagger/index.html - null null
+2025-08-24 18:42:49.080 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7184/swagger/index.html - 200 null text/html;charset=utf-8 31.9395ms
+2025-08-24 18:42:49.105 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7184/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-24 18:42:49.105 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7184/_vs/browserLink - null null
+2025-08-24 18:42:49.140 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7184/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 34.9172ms
+2025-08-24 18:42:49.162 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7184/_vs/browserLink - 200 null text/javascript; charset=UTF-8 56.4184ms
+2025-08-24 18:42:49.211 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7184/swagger/v1/swagger.json - null null
+2025-08-24 18:42:49.252 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7184/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 40.7817ms
+2025-08-24 18:46:21.829 +06:00 [INF] User profile is available. Using 'C:\Users\Ishani\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-24 18:46:23.137 +06:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-24 18:46:24.529 +06:00 [INF] Executed DbCommand (106ms) [Parameters=[@__normalizedName_0='ADMIN'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-08-24 18:46:24.733 +06:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedName_0='MANAGER'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-08-24 18:46:24.740 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='EMPLOYEE'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-08-24 18:46:24.775 +06:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedUserName_0='ADMIN@DEMO.COM'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-24 18:46:24.876 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='ADMIN'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-08-24 18:46:25.029 +06:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='25cef98f-b7b1-4381-bb68-86ead11b7270', @__p_1='6fe3a66f-c47c-4d45-8b5f-65d94d840319'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-08-24 18:46:25.080 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='MANAGER@DEMO.COM'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-24 18:46:25.090 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='MANAGER'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-08-24 18:46:25.097 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='0f700efe-9156-43db-9669-bb851e5c57e9', @__p_1='5d6f83e6-aa24-407a-8766-7896d21edfdb'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-08-24 18:46:25.103 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='EMPLOYEE@DEMO.COM'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-24 18:46:25.108 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='EMPLOYEE'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-08-24 18:46:25.119 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='35852512-3783-460d-a967-58546aae290e', @__p_1='482fc376-3d28-4125-bcfa-b088d0dd3059'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-08-24 18:46:25.458 +06:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-24 18:46:25.925 +06:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-24 18:46:25.976 +06:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-24 18:46:25.990 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-24 18:46:26.004 +06:00 [INF] No migrations were applied. The database is already up to date.
+2025-08-24 18:46:26.380 +06:00 [INF] Now listening on: https://localhost:7184
+2025-08-24 18:46:26.478 +06:00 [INF] Now listening on: http://localhost:5284
+2025-08-24 18:46:26.677 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-24 18:46:26.688 +06:00 [INF] Hosting environment: Development
+2025-08-24 18:46:26.691 +06:00 [INF] Content root path: D:\robin\Selise-TMS\TMS.API\TMS.API
+2025-08-24 18:57:13.388 +06:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-24 19:01:38.760 +06:00 [INF] User profile is available. Using 'C:\Users\Ishani\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-24 19:01:39.816 +06:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-24 19:01:40.795 +06:00 [ERR] An error occurred using the connection to database 'TMS' on server 'tcp://localhost:5432'.
+2025-08-24 19:01:40.849 +06:00 [ERR] An exception occurred while iterating over the results of a query for context type 'TMS.Infrastructure.Data.AppDbContext'.
+Npgsql.PostgresException (0x80004005): 3D000: database "TMS" does not exist
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|214_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|33_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: FATAL
+    SqlState: 3D000
+    MessageText: database "TMS" does not exist
+    File: postinit.c
+    Line: 1034
+    Routine: InitPostgres
+Npgsql.PostgresException (0x80004005): 3D000: database "TMS" does not exist
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|214_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|33_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: FATAL
+    SqlState: 3D000
+    MessageText: database "TMS" does not exist
+    File: postinit.c
+    Line: 1034
+    Routine: InitPostgres
+2025-08-24 19:03:29.342 +06:00 [INF] User profile is available. Using 'C:\Users\Ishani\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-24 19:03:30.383 +06:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-24 19:03:31.599 +06:00 [ERR] An error occurred using the connection to database 'TMS' on server 'tcp://localhost:5432'.
+2025-08-24 19:03:31.666 +06:00 [ERR] An exception occurred while iterating over the results of a query for context type 'TMS.Infrastructure.Data.AppDbContext'.
+Npgsql.PostgresException (0x80004005): 3D000: database "TMS" does not exist
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|214_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|33_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: FATAL
+    SqlState: 3D000
+    MessageText: database "TMS" does not exist
+    File: postinit.c
+    Line: 1034
+    Routine: InitPostgres
+Npgsql.PostgresException (0x80004005): 3D000: database "TMS" does not exist
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|214_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|33_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: FATAL
+    SqlState: 3D000
+    MessageText: database "TMS" does not exist
+    File: postinit.c
+    Line: 1034
+    Routine: InitPostgres
+2025-08-24 19:03:32.628 +06:00 [ERR] An error occurred using the connection to database 'TMS' on server 'tcp://localhost:5432'.
+2025-08-24 19:03:33.897 +06:00 [INF] Executed DbCommand (809ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE DATABASE "TMS";
+2025-08-24 19:03:34.416 +06:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-24 19:03:34.456 +06:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-24 19:03:34.476 +06:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-24 19:03:34.511 +06:00 [INF] Applying migration '20250824125716_addAuditTeamAndTask'.
+2025-08-24 19:03:34.602 +06:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetRoles" (
+    "Id" text NOT NULL,
+    "Name" character varying(256),
+    "NormalizedName" character varying(256),
+    "ConcurrencyStamp" text,
+    CONSTRAINT "PK_AspNetRoles" PRIMARY KEY ("Id")
+);
+2025-08-24 19:03:34.613 +06:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUsers" (
+    "Id" text NOT NULL,
+    "Email" character varying(100) NOT NULL,
+    "Role" character varying(50) NOT NULL,
+    "UserName" character varying(256),
+    "NormalizedUserName" character varying(256),
+    "NormalizedEmail" character varying(256),
+    "EmailConfirmed" boolean NOT NULL,
+    "PasswordHash" text,
+    "SecurityStamp" text,
+    "ConcurrencyStamp" text,
+    "PhoneNumber" text,
+    "PhoneNumberConfirmed" boolean NOT NULL,
+    "TwoFactorEnabled" boolean NOT NULL,
+    "LockoutEnd" timestamp with time zone,
+    "LockoutEnabled" boolean NOT NULL,
+    "AccessFailedCount" integer NOT NULL,
+    CONSTRAINT "PK_AspNetUsers" PRIMARY KEY ("Id")
+);
+2025-08-24 19:03:34.656 +06:00 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Tasks" (
+    "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+    "Title" character varying(100) NOT NULL,
+    "Description" character varying(1000) NOT NULL,
+    "Status" integer NOT NULL,
+    "AssignedToUserId" text NOT NULL,
+    "CreatedUserId" text NOT NULL,
+    "TeamId" integer NOT NULL,
+    "DueDate" timestamp with time zone NOT NULL,
+    "CreatedOn" timestamp with time zone NOT NULL,
+    "ModifiedOn" timestamp with time zone,
+    CONSTRAINT "PK_Tasks" PRIMARY KEY ("Id")
+);
+2025-08-24 19:03:34.682 +06:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Teams" (
+    "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+    "Name" character varying(50) NOT NULL,
+    "Description" character varying(500) NOT NULL,
+    "CreatedOn" timestamp with time zone NOT NULL,
+    "ModifiedOn" timestamp with time zone,
+    CONSTRAINT "PK_Teams" PRIMARY KEY ("Id")
+);
+2025-08-24 19:03:34.707 +06:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetRoleClaims" (
+    "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+    "RoleId" text NOT NULL,
+    "ClaimType" text,
+    "ClaimValue" text,
+    CONSTRAINT "PK_AspNetRoleClaims" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_AspNetRoleClaims_AspNetRoles_RoleId" FOREIGN KEY ("RoleId") REFERENCES "AspNetRoles" ("Id") ON DELETE CASCADE
+);
+2025-08-24 19:03:34.732 +06:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUserClaims" (
+    "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+    "UserId" text NOT NULL,
+    "ClaimType" text,
+    "ClaimValue" text,
+    CONSTRAINT "PK_AspNetUserClaims" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_AspNetUserClaims_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+2025-08-24 19:03:34.746 +06:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUserLogins" (
+    "LoginProvider" text NOT NULL,
+    "ProviderKey" text NOT NULL,
+    "ProviderDisplayName" text,
+    "UserId" text NOT NULL,
+    CONSTRAINT "PK_AspNetUserLogins" PRIMARY KEY ("LoginProvider", "ProviderKey"),
+    CONSTRAINT "FK_AspNetUserLogins_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+2025-08-24 19:03:34.776 +06:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUserRoles" (
+    "UserId" text NOT NULL,
+    "RoleId" text NOT NULL,
+    CONSTRAINT "PK_AspNetUserRoles" PRIMARY KEY ("UserId", "RoleId"),
+    CONSTRAINT "FK_AspNetUserRoles_AspNetRoles_RoleId" FOREIGN KEY ("RoleId") REFERENCES "AspNetRoles" ("Id") ON DELETE CASCADE,
+    CONSTRAINT "FK_AspNetUserRoles_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+2025-08-24 19:03:34.793 +06:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetUserTokens" (
+    "UserId" text NOT NULL,
+    "LoginProvider" text NOT NULL,
+    "Name" text NOT NULL,
+    "Value" text,
+    CONSTRAINT "PK_AspNetUserTokens" PRIMARY KEY ("UserId", "LoginProvider", "Name"),
+    CONSTRAINT "FK_AspNetUserTokens_AspNetUsers_UserId" FOREIGN KEY ("UserId") REFERENCES "AspNetUsers" ("Id") ON DELETE CASCADE
+);
+2025-08-24 19:03:34.803 +06:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_AspNetRoleClaims_RoleId" ON "AspNetRoleClaims" ("RoleId");
+2025-08-24 19:03:34.863 +06:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "RoleNameIndex" ON "AspNetRoles" ("NormalizedName");
+2025-08-24 19:03:34.875 +06:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_AspNetUserClaims_UserId" ON "AspNetUserClaims" ("UserId");
+2025-08-24 19:03:34.886 +06:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_AspNetUserLogins_UserId" ON "AspNetUserLogins" ("UserId");
+2025-08-24 19:03:34.898 +06:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_AspNetUserRoles_RoleId" ON "AspNetUserRoles" ("RoleId");
+2025-08-24 19:03:34.918 +06:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "EmailIndex" ON "AspNetUsers" ("NormalizedEmail");
+2025-08-24 19:03:34.928 +06:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "UserNameIndex" ON "AspNetUsers" ("NormalizedUserName");
+2025-08-24 19:03:34.940 +06:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20250824125716_addAuditTeamAndTask', '9.0.8');
+2025-08-24 19:03:35.415 +06:00 [INF] Now listening on: https://localhost:7184
+2025-08-24 19:03:35.417 +06:00 [INF] Now listening on: http://localhost:5284
+2025-08-24 19:03:35.582 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-24 19:03:35.587 +06:00 [INF] Hosting environment: Development
+2025-08-24 19:03:35.589 +06:00 [INF] Content root path: D:\robin\Selise-TMS\TMS.API\TMS.API
+2025-08-24 19:03:58.016 +06:00 [INF] User profile is available. Using 'C:\Users\Ishani\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-24 19:03:58.861 +06:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-24 19:04:00.073 +06:00 [INF] Executed DbCommand (93ms) [Parameters=[@__normalizedName_0='ADMIN'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-08-24 19:04:00.118 +06:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='ADMIN'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-08-24 19:04:00.310 +06:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='a90ba213-689d-4ae6-9a6e-238086377084' (Nullable = false), @p1=NULL, @p2='Admin', @p3='ADMIN'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetRoles" ("Id", "ConcurrencyStamp", "Name", "NormalizedName")
+VALUES (@p0, @p1, @p2, @p3);
+2025-08-24 19:04:00.331 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='MANAGER'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-08-24 19:04:00.337 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='MANAGER'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-08-24 19:04:00.343 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='7d1c2645-bb31-4015-987d-2de86f23a3d5' (Nullable = false), @p1=NULL, @p2='Manager', @p3='MANAGER'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetRoles" ("Id", "ConcurrencyStamp", "Name", "NormalizedName")
+VALUES (@p0, @p1, @p2, @p3);
+2025-08-24 19:04:00.348 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='EMPLOYEE'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-08-24 19:04:00.355 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='EMPLOYEE'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-08-24 19:04:00.359 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='857276f0-c9b4-42a0-971e-37f135bf36a4' (Nullable = false), @p1=NULL, @p2='Employee', @p3='EMPLOYEE'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetRoles" ("Id", "ConcurrencyStamp", "Name", "NormalizedName")
+VALUES (@p0, @p1, @p2, @p3);
+2025-08-24 19:04:00.382 +06:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='ADMIN@DEMO.COM'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-24 19:04:00.569 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='ADMIN@DEMO.COM'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-24 19:04:00.708 +06:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='2e2e717d-9e5f-449b-bdb8-a334fc333513' (Nullable = false), @p1='0', @p2='f7f0a2eb-1111-4508-b44e-39e3d4785db7', @p3='admin@demo.com' (Nullable = false), @p4='True', @p5='True', @p6=NULL (DbType = DateTime), @p7=NULL, @p8='ADMIN@DEMO.COM', @p9='AQAAAAIAAYagAAAAEAMm33OjtK4riyC5R1auBaF//RH4toTHcG6qMCG0yTg4AvS4j8pRxp3nDVgLQAjUig==', @p10=NULL, @p11='False', @p12='Admin' (Nullable = false), @p13='HU6FOJI2XH4HRZOIK2VOGFC3NFSIO5E5', @p14='False', @p15='admin@demo.com'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "Role", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+2025-08-24 19:04:00.728 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='ADMIN'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-08-24 19:04:00.790 +06:00 [INF] Executed DbCommand (10ms) [Parameters=[@__p_0='2e2e717d-9e5f-449b-bdb8-a334fc333513', @__p_1='a90ba213-689d-4ae6-9a6e-238086377084'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-08-24 19:04:00.800 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='ADMIN'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-08-24 19:04:00.818 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='ADMIN@DEMO.COM'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-24 19:04:00.858 +06:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='a90ba213-689d-4ae6-9a6e-238086377084' (Nullable = false), @p1='2e2e717d-9e5f-449b-bdb8-a334fc333513' (Nullable = false), @p17='2e2e717d-9e5f-449b-bdb8-a334fc333513' (Nullable = false), @p2='0', @p3='0218a476-bf3b-4531-b2c4-c10c63ebf79b', @p18='f7f0a2eb-1111-4508-b44e-39e3d4785db7', @p4='admin@demo.com' (Nullable = false), @p5='True', @p6='True', @p7=NULL (DbType = DateTime), @p8=NULL, @p9='ADMIN@DEMO.COM', @p10='AQAAAAIAAYagAAAAEAMm33OjtK4riyC5R1auBaF//RH4toTHcG6qMCG0yTg4AvS4j8pRxp3nDVgLQAjUig==', @p11=NULL, @p12='False', @p13='Admin' (Nullable = false), @p14='HU6FOJI2XH4HRZOIK2VOGFC3NFSIO5E5', @p15='False', @p16='admin@demo.com'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUserRoles" ("RoleId", "UserId")
+VALUES (@p0, @p1);
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p2, "ConcurrencyStamp" = @p3, "Email" = @p4, "EmailConfirmed" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "Role" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2025-08-24 19:04:00.879 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='MANAGER@DEMO.COM'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-24 19:04:01.006 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='MANAGER@DEMO.COM'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-24 19:04:01.017 +06:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='d450b25e-7e48-4d66-9d44-8b8e08681c95' (Nullable = false), @p1='0', @p2='66923914-ad0c-41ce-83dd-dddf9943ee48', @p3='manager@demo.com' (Nullable = false), @p4='True', @p5='True', @p6=NULL (DbType = DateTime), @p7=NULL, @p8='MANAGER@DEMO.COM', @p9='AQAAAAIAAYagAAAAEG0vMMwEw2baEvwSnVQAJQNTOWl/iIvYtPjmE4wQHmzIcaOG6twW5bYYkDGdPdzKOg==', @p10=NULL, @p11='False', @p12='Manager' (Nullable = false), @p13='W4OKBNKBRCJA2ON7NUYESH3STYLFHCSY', @p14='False', @p15='manager@demo.com'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "Role", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+2025-08-24 19:04:01.021 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='MANAGER'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-08-24 19:04:01.026 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='d450b25e-7e48-4d66-9d44-8b8e08681c95', @__p_1='7d1c2645-bb31-4015-987d-2de86f23a3d5'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-08-24 19:04:01.029 +06:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedRoleName_0='MANAGER'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-08-24 19:04:01.037 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='MANAGER@DEMO.COM'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-24 19:04:01.042 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='7d1c2645-bb31-4015-987d-2de86f23a3d5' (Nullable = false), @p1='d450b25e-7e48-4d66-9d44-8b8e08681c95' (Nullable = false), @p17='d450b25e-7e48-4d66-9d44-8b8e08681c95' (Nullable = false), @p2='0', @p3='63ebb829-56fa-46c1-90f1-3e0af2fc3421', @p18='66923914-ad0c-41ce-83dd-dddf9943ee48', @p4='manager@demo.com' (Nullable = false), @p5='True', @p6='True', @p7=NULL (DbType = DateTime), @p8=NULL, @p9='MANAGER@DEMO.COM', @p10='AQAAAAIAAYagAAAAEG0vMMwEw2baEvwSnVQAJQNTOWl/iIvYtPjmE4wQHmzIcaOG6twW5bYYkDGdPdzKOg==', @p11=NULL, @p12='False', @p13='Manager' (Nullable = false), @p14='W4OKBNKBRCJA2ON7NUYESH3STYLFHCSY', @p15='False', @p16='manager@demo.com'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUserRoles" ("RoleId", "UserId")
+VALUES (@p0, @p1);
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p2, "ConcurrencyStamp" = @p3, "Email" = @p4, "EmailConfirmed" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "Role" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2025-08-24 19:04:01.046 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='EMPLOYEE@DEMO.COM'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-24 19:04:01.175 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='EMPLOYEE@DEMO.COM'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-24 19:04:01.182 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='84976223-5a8f-4871-81fd-399980ae6560' (Nullable = false), @p1='0', @p2='6a491fb2-59d5-423b-b2c5-0c564c3a5d9b', @p3='employee@demo.com' (Nullable = false), @p4='True', @p5='True', @p6=NULL (DbType = DateTime), @p7=NULL, @p8='EMPLOYEE@DEMO.COM', @p9='AQAAAAIAAYagAAAAEK51vUH91a36pIBVXp1rPz8gjNIHUXDQ0sjyphCDvzbdJMnBurCBA+hMpV+a8H3dsA==', @p10=NULL, @p11='False', @p12='Employee' (Nullable = false), @p13='FVTCTATA6DSWH5AJQ35I4OODEQ6NTZJR', @p14='False', @p15='employee@demo.com'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "Role", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+2025-08-24 19:04:01.187 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='EMPLOYEE'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-08-24 19:04:01.195 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='84976223-5a8f-4871-81fd-399980ae6560', @__p_1='857276f0-c9b4-42a0-971e-37f135bf36a4'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-08-24 19:04:01.199 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='EMPLOYEE'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-08-24 19:04:01.205 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='EMPLOYEE@DEMO.COM'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-24 19:04:01.212 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='857276f0-c9b4-42a0-971e-37f135bf36a4' (Nullable = false), @p1='84976223-5a8f-4871-81fd-399980ae6560' (Nullable = false), @p17='84976223-5a8f-4871-81fd-399980ae6560' (Nullable = false), @p2='0', @p3='42b664ae-b28a-4ed1-b9e0-753f72bb6a41', @p18='6a491fb2-59d5-423b-b2c5-0c564c3a5d9b', @p4='employee@demo.com' (Nullable = false), @p5='True', @p6='True', @p7=NULL (DbType = DateTime), @p8=NULL, @p9='EMPLOYEE@DEMO.COM', @p10='AQAAAAIAAYagAAAAEK51vUH91a36pIBVXp1rPz8gjNIHUXDQ0sjyphCDvzbdJMnBurCBA+hMpV+a8H3dsA==', @p11=NULL, @p12='False', @p13='Employee' (Nullable = false), @p14='FVTCTATA6DSWH5AJQ35I4OODEQ6NTZJR', @p15='False', @p16='employee@demo.com'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUserRoles" ("RoleId", "UserId")
+VALUES (@p0, @p1);
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p2, "ConcurrencyStamp" = @p3, "Email" = @p4, "EmailConfirmed" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "Role" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2025-08-24 19:04:01.577 +06:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-24 19:04:01.933 +06:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-24 19:04:01.955 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-24 19:04:01.961 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-24 19:04:01.972 +06:00 [INF] No migrations were applied. The database is already up to date.
+2025-08-24 19:04:02.274 +06:00 [INF] Now listening on: https://localhost:7184
+2025-08-24 19:04:02.278 +06:00 [INF] Now listening on: http://localhost:5284
+2025-08-24 19:04:02.644 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-24 19:04:02.646 +06:00 [INF] Hosting environment: Development
+2025-08-24 19:04:02.652 +06:00 [INF] Content root path: D:\robin\Selise-TMS\TMS.API\TMS.API
+2025-08-24 19:04:27.802 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7184/swagger/index.html - null null
+2025-08-24 19:04:28.130 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7184/swagger/index.html - 200 null text/html;charset=utf-8 341.603ms
+2025-08-24 19:04:28.196 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7184/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-24 19:04:28.196 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7184/_vs/browserLink - null null
+2025-08-24 19:04:28.234 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7184/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 38.0807ms
+2025-08-24 19:04:28.295 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7184/_vs/browserLink - 200 null text/javascript; charset=UTF-8 98.8287ms
+2025-08-24 19:04:28.703 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7184/swagger/v1/swagger.json - null null
+2025-08-24 19:04:28.751 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7184/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 47.6425ms
+2025-08-24 19:04:53.738 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7184/TMS/api/Login - application/json 58
+2025-08-24 19:04:56.345 +06:00 [INF] Executing endpoint 'WebApplication1.Controllers.LoginController.Login (TMS.API)'
+2025-08-24 19:04:56.385 +06:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TMS.Application.features.User.Login.LoginUserCommand) on controller WebApplication1.Controllers.LoginController (TMS.API).
+2025-08-24 19:04:56.396 +06:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-08-24 19:04:56.464 +06:00 [INF] Login attempt for email: admin@demo.com
+2025-08-24 19:04:56.506 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='ADMIN@DEMO.COM'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-24 19:04:56.803 +06:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='2e2e717d-9e5f-449b-bdb8-a334fc333513'], CommandType='"Text"', CommandTimeout='30']
+SELECT a0."Name"
+FROM "AspNetUserRoles" AS a
+INNER JOIN "AspNetRoles" AS a0 ON a."RoleId" = a0."Id"
+WHERE a."UserId" = @__userId_0
+2025-08-24 19:04:56.999 +06:00 [INF] Executing OkObjectResult, writing value of type 'TMS.Application.features.User.Login.LoginUserResponse'.
+2025-08-24 19:04:57.015 +06:00 [INF] Executed action WebApplication1.Controllers.LoginController.Login (TMS.API) in 619.4231ms
+2025-08-24 19:04:57.021 +06:00 [INF] Executed endpoint 'WebApplication1.Controllers.LoginController.Login (TMS.API)'
+2025-08-24 19:04:57.032 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7184/TMS/api/Login - 200 null application/json; charset=utf-8 3294.6526ms
+2025-08-24 19:05:42.056 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7184/TMS/api/User - null null
+2025-08-24 19:05:42.167 +06:00 [INF] Executing endpoint 'WebApplication1.Controllers.UserController.GetUser (TMS.API)'
+2025-08-24 19:05:42.186 +06:00 [INF] Route matched with {action = "GetUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUser(TMS.Application.features.User.Get.ResourseParameter) on controller WebApplication1.Controllers.UserController (TMS.API).
+2025-08-24 19:05:42.208 +06:00 [INF] Getting users with resource: {"PageNumber":1,"PageSize":10,"OrderBy":"Name","SearchQuery":null,"$type":"ResourseParameter"}
+2025-08-24 19:05:42.264 +06:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='10', @__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+ORDER BY a."UserName"
+LIMIT @__p_1 OFFSET @__p_0
+2025-08-24 19:05:42.277 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TMS.Application.features.User.Get.UserResponse, TMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-24 19:05:42.282 +06:00 [INF] Executed action WebApplication1.Controllers.UserController.GetUser (TMS.API) in 93.3282ms
+2025-08-24 19:05:42.285 +06:00 [INF] Executed endpoint 'WebApplication1.Controllers.UserController.GetUser (TMS.API)'
+2025-08-24 19:05:42.287 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7184/TMS/api/User - 200 null application/json; charset=utf-8 231.4569ms
+2025-08-24 19:05:54.292 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7184/TMS/api/Task - null null
+2025-08-24 19:05:54.312 +06:00 [INF] Executing endpoint 'WebApplication1.Controllers.TaskController.GetAllTasks (TMS.API)'
+2025-08-24 19:05:54.321 +06:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(TMS.Application.features.Task.Get.ResourseParameter) on controller WebApplication1.Controllers.TaskController (TMS.API).
+2025-08-24 19:05:54.333 +06:00 [INF] Getting all tasks with resource: {"PageNumber":1,"PageSize":10,"OrderBy":"Title","SearchQuery":null,"$type":"ResourseParameter"}
+2025-08-24 19:05:54.376 +06:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='10', @__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AssignedToUserId", t."CreatedOn", t."CreatedUserId", t."Description", t."DueDate", t."ModifiedOn", t."Status", t."TeamId", t."Title"
+FROM "Tasks" AS t
+ORDER BY t."Title"
+LIMIT @__p_1 OFFSET @__p_0
+2025-08-24 19:05:54.382 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TMS.Application.features.Task.Get.TaskResponse, TMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-24 19:05:54.397 +06:00 [INF] Executed action WebApplication1.Controllers.TaskController.GetAllTasks (TMS.API) in 72.8475ms
+2025-08-24 19:05:54.403 +06:00 [INF] Executed endpoint 'WebApplication1.Controllers.TaskController.GetAllTasks (TMS.API)'
+2025-08-24 19:05:54.405 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7184/TMS/api/Task - 200 null application/json; charset=utf-8 113.5972ms
+2025-08-24 19:06:59.181 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7184/TMS/api/Team - null null
+2025-08-24 19:06:59.187 +06:00 [INF] Executing endpoint 'WebApplication1.Controllers.TeamController.GetTeam (TMS.API)'
+2025-08-24 19:06:59.201 +06:00 [INF] Route matched with {action = "GetTeam", controller = "Team"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTeam(TMS.Application.features.Team.Get.ResourseParameter) on controller WebApplication1.Controllers.TeamController (TMS.API).
+2025-08-24 19:06:59.212 +06:00 [INF] Getting teams with resource: {"PageNumber":1,"PageSize":10,"OrderBy":"Name","SearchQuery":null,"$type":"ResourseParameter"}
+2025-08-24 19:06:59.237 +06:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='10', @__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."CreatedOn", t."Description", t."ModifiedOn", t."Name"
+FROM "Teams" AS t
+ORDER BY t."Name"
+LIMIT @__p_1 OFFSET @__p_0
+2025-08-24 19:06:59.246 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TMS.Application.features.Team.Get.TeamResponse, TMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-24 19:06:59.249 +06:00 [INF] Executed action WebApplication1.Controllers.TeamController.GetTeam (TMS.API) in 45.7065ms
+2025-08-24 19:06:59.251 +06:00 [INF] Executed endpoint 'WebApplication1.Controllers.TeamController.GetTeam (TMS.API)'
+2025-08-24 19:06:59.253 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7184/TMS/api/Team - 200 null application/json; charset=utf-8 71.8566ms
+2025-08-24 19:07:16.336 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7184/TMS/api/Team - application/json 51
+2025-08-24 19:07:16.360 +06:00 [INF] Executing endpoint 'WebApplication1.Controllers.TeamController.CreateTeam (TMS.API)'
+2025-08-24 19:07:16.370 +06:00 [INF] Route matched with {action = "CreateTeam", controller = "Team"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateTeam(TMS.Application.features.Team.Post.CreateTeamCommand) on controller WebApplication1.Controllers.TeamController (TMS.API).
+2025-08-24 19:07:16.376 +06:00 [INF] Creating team with name: alpha team
+2025-08-24 19:07:16.454 +06:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='2025-08-24T13:07:16.4410775+00:00' (DbType = DateTime), @p1='team' (Nullable = false), @p2=NULL (DbType = DateTime), @p3='alpha team' (Nullable = false)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Teams" ("CreatedOn", "Description", "ModifiedOn", "Name")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2025-08-24 19:07:16.482 +06:00 [INF] Executing CreatedAtRouteResult, writing value of type 'TMS.Application.features.Team.Post.CreateTeamResponse'.
+2025-08-24 19:07:16.518 +06:00 [INF] Executed action WebApplication1.Controllers.TeamController.CreateTeam (TMS.API) in 146.4021ms
+2025-08-24 19:07:16.520 +06:00 [INF] Executed endpoint 'WebApplication1.Controllers.TeamController.CreateTeam (TMS.API)'
+2025-08-24 19:07:16.522 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7184/TMS/api/Team - 201 null application/json; charset=utf-8 185.8683ms
+2025-08-24 19:07:23.240 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7184/TMS/api/Task - application/json 249
+2025-08-24 19:07:23.257 +06:00 [INF] Executing endpoint 'WebApplication1.Controllers.TaskController.CreateTask (TMS.API)'
+2025-08-24 19:07:23.265 +06:00 [INF] Route matched with {action = "CreateTask", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateTask(TMS.Application.features.Task.Post.CreateTaskCommand) on controller WebApplication1.Controllers.TaskController (TMS.API).
+2025-08-24 19:07:23.281 +06:00 [INF] Creating task with title: 1st task
+2025-08-24 19:07:23.299 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."CreatedOn", t."Description", t."ModifiedOn", t."Name"
+FROM "Teams" AS t
+WHERE t."Id" = @__p_0
+LIMIT 1
+2025-08-24 19:07:23.303 +06:00 [INF] Executing CreatedAtActionResult, writing value of type 'null'.
+2025-08-24 19:07:23.306 +06:00 [INF] Executed action WebApplication1.Controllers.TaskController.CreateTask (TMS.API) in 37.7906ms
+2025-08-24 19:07:23.312 +06:00 [INF] Executed endpoint 'WebApplication1.Controllers.TaskController.CreateTask (TMS.API)'
+2025-08-24 19:07:23.315 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7184/TMS/api/Task - 201 0 null 73.9895ms
+2025-08-24 19:07:32.070 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7184/TMS/api/Task - null null
+2025-08-24 19:07:32.084 +06:00 [INF] Executing endpoint 'WebApplication1.Controllers.TaskController.GetAllTasks (TMS.API)'
+2025-08-24 19:07:32.088 +06:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(TMS.Application.features.Task.Get.ResourseParameter) on controller WebApplication1.Controllers.TaskController (TMS.API).
+2025-08-24 19:07:32.092 +06:00 [INF] Getting all tasks with resource: {"PageNumber":1,"PageSize":10,"OrderBy":"Title","SearchQuery":null,"$type":"ResourseParameter"}
+2025-08-24 19:07:32.105 +06:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='10', @__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AssignedToUserId", t."CreatedOn", t."CreatedUserId", t."Description", t."DueDate", t."ModifiedOn", t."Status", t."TeamId", t."Title"
+FROM "Tasks" AS t
+ORDER BY t."Title"
+LIMIT @__p_1 OFFSET @__p_0
+2025-08-24 19:07:32.113 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TMS.Application.features.Task.Get.TaskResponse, TMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-24 19:07:32.116 +06:00 [INF] Executed action WebApplication1.Controllers.TaskController.GetAllTasks (TMS.API) in 24.5321ms
+2025-08-24 19:07:32.127 +06:00 [INF] Executed endpoint 'WebApplication1.Controllers.TaskController.GetAllTasks (TMS.API)'
+2025-08-24 19:07:32.129 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7184/TMS/api/Task - 200 null application/json; charset=utf-8 59.249ms
+2025-08-24 19:08:25.714 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7184/TMS/api/Task - application/json 249
+2025-08-24 19:08:25.732 +06:00 [INF] Executing endpoint 'WebApplication1.Controllers.TaskController.CreateTask (TMS.API)'
+2025-08-24 19:08:25.733 +06:00 [INF] Route matched with {action = "CreateTask", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateTask(TMS.Application.features.Task.Post.CreateTaskCommand) on controller WebApplication1.Controllers.TaskController (TMS.API).
+2025-08-24 19:08:25.737 +06:00 [INF] Creating task with title: 1st task
+2025-08-24 19:08:29.799 +06:00 [INF] Executed DbCommand (12ms) [Parameters=[@__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."CreatedOn", t."Description", t."ModifiedOn", t."Name"
+FROM "Teams" AS t
+WHERE t."Id" = @__p_0
+LIMIT 1
+2025-08-24 19:09:10.658 +06:00 [INF] User profile is available. Using 'C:\Users\Ishani\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-24 19:09:11.644 +06:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-24 19:09:13.021 +06:00 [INF] Executed DbCommand (122ms) [Parameters=[@__normalizedName_0='ADMIN'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-08-24 19:09:13.204 +06:00 [INF] Executed DbCommand (15ms) [Parameters=[@__normalizedName_0='MANAGER'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-08-24 19:09:13.218 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='EMPLOYEE'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-08-24 19:09:13.250 +06:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedUserName_0='ADMIN@DEMO.COM'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-24 19:09:13.355 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='ADMIN'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-08-24 19:09:13.420 +06:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='2e2e717d-9e5f-449b-bdb8-a334fc333513', @__p_1='a90ba213-689d-4ae6-9a6e-238086377084'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-08-24 19:09:13.445 +06:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='MANAGER@DEMO.COM'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-24 19:09:13.455 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='MANAGER'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-08-24 19:09:13.463 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='d450b25e-7e48-4d66-9d44-8b8e08681c95', @__p_1='7d1c2645-bb31-4015-987d-2de86f23a3d5'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-08-24 19:09:13.469 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='EMPLOYEE@DEMO.COM'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-24 19:09:13.474 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='EMPLOYEE'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-08-24 19:09:13.481 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='84976223-5a8f-4871-81fd-399980ae6560', @__p_1='857276f0-c9b4-42a0-971e-37f135bf36a4'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-08-24 19:09:13.864 +06:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-24 19:09:14.202 +06:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-24 19:09:14.245 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-24 19:09:14.252 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-24 19:09:14.267 +06:00 [INF] No migrations were applied. The database is already up to date.
+2025-08-24 19:09:14.553 +06:00 [INF] Now listening on: https://localhost:7184
+2025-08-24 19:09:14.557 +06:00 [INF] Now listening on: http://localhost:5284
+2025-08-24 19:09:14.868 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-24 19:09:14.877 +06:00 [INF] Hosting environment: Development
+2025-08-24 19:09:14.879 +06:00 [INF] Content root path: D:\robin\Selise-TMS\TMS.API\TMS.API
+2025-08-24 19:09:16.926 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7184/TMS/api/Task - application/json 249
+2025-08-24 19:09:17.342 +06:00 [INF] Executing endpoint 'WebApplication1.Controllers.TaskController.CreateTask (TMS.API)'
+2025-08-24 19:09:17.380 +06:00 [INF] Route matched with {action = "CreateTask", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateTask(TMS.Application.features.Task.Post.CreateTaskCommand) on controller WebApplication1.Controllers.TaskController (TMS.API).
+2025-08-24 19:09:17.394 +06:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-08-24 19:09:17.484 +06:00 [INF] Creating task with title: 1st task
+2025-08-24 19:09:19.327 +06:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."CreatedOn", t."Description", t."ModifiedOn", t."Name"
+FROM "Teams" AS t
+WHERE t."Id" = @__p_0
+LIMIT 1
+2025-08-24 19:09:19.347 +06:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-08-24 19:09:19.393 +06:00 [INF] Executed action WebApplication1.Controllers.TaskController.CreateTask (TMS.API) in 2001.2228ms
+2025-08-24 19:09:19.405 +06:00 [INF] Executed endpoint 'WebApplication1.Controllers.TaskController.CreateTask (TMS.API)'
+2025-08-24 19:09:19.417 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7184/TMS/api/Task - 404 null application/problem+json; charset=utf-8 2502.5346ms
+2025-08-24 19:10:12.828 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7184/TMS/api/Task - application/json 249
+2025-08-24 19:10:12.877 +06:00 [INF] Executing endpoint 'WebApplication1.Controllers.TaskController.CreateTask (TMS.API)'
+2025-08-24 19:10:12.879 +06:00 [INF] Route matched with {action = "CreateTask", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateTask(TMS.Application.features.Task.Post.CreateTaskCommand) on controller WebApplication1.Controllers.TaskController (TMS.API).
+2025-08-24 19:10:12.884 +06:00 [INF] Creating task with title: 1st task
+2025-08-24 19:10:15.494 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."CreatedOn", t."Description", t."ModifiedOn", t."Name"
+FROM "Teams" AS t
+WHERE t."Id" = @__p_0
+LIMIT 1
+2025-08-24 19:10:22.591 +06:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-08-24 19:10:22.595 +06:00 [INF] Executed action WebApplication1.Controllers.TaskController.CreateTask (TMS.API) in 9712.4844ms
+2025-08-24 19:10:22.598 +06:00 [INF] Executed endpoint 'WebApplication1.Controllers.TaskController.CreateTask (TMS.API)'
+2025-08-24 19:10:22.601 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7184/TMS/api/Task - 404 null application/problem+json; charset=utf-8 9800.8095ms
+2025-08-24 19:10:51.610 +06:00 [INF] User profile is available. Using 'C:\Users\Ishani\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-24 19:10:52.568 +06:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-24 19:10:53.957 +06:00 [INF] Executed DbCommand (81ms) [Parameters=[@__normalizedName_0='ADMIN'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-08-24 19:10:54.080 +06:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedName_0='MANAGER'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-08-24 19:10:54.085 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='EMPLOYEE'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-08-24 19:10:54.107 +06:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='ADMIN@DEMO.COM'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-24 19:10:54.189 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='ADMIN'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-08-24 19:10:54.231 +06:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='2e2e717d-9e5f-449b-bdb8-a334fc333513', @__p_1='a90ba213-689d-4ae6-9a6e-238086377084'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-08-24 19:10:54.262 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='MANAGER@DEMO.COM'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-24 19:10:54.273 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='MANAGER'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-08-24 19:10:54.280 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='d450b25e-7e48-4d66-9d44-8b8e08681c95', @__p_1='7d1c2645-bb31-4015-987d-2de86f23a3d5'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-08-24 19:10:54.288 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='EMPLOYEE@DEMO.COM'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-24 19:10:54.292 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='EMPLOYEE'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."ConcurrencyStamp", a."Name", a."NormalizedName"
+FROM "AspNetRoles" AS a
+WHERE a."NormalizedName" = @__normalizedRoleName_0
+LIMIT 2
+2025-08-24 19:10:54.301 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='84976223-5a8f-4871-81fd-399980ae6560', @__p_1='857276f0-c9b4-42a0-971e-37f135bf36a4'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."UserId", a."RoleId"
+FROM "AspNetUserRoles" AS a
+WHERE a."UserId" = @__p_0 AND a."RoleId" = @__p_1
+LIMIT 1
+2025-08-24 19:10:54.623 +06:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-24 19:10:54.992 +06:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-24 19:10:55.043 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-24 19:10:55.058 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-24 19:10:55.071 +06:00 [INF] No migrations were applied. The database is already up to date.
+2025-08-24 19:10:55.450 +06:00 [INF] Now listening on: https://localhost:7184
+2025-08-24 19:10:55.452 +06:00 [INF] Now listening on: http://localhost:5284
+2025-08-24 19:10:55.568 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-24 19:10:55.571 +06:00 [INF] Hosting environment: Development
+2025-08-24 19:10:55.573 +06:00 [INF] Content root path: D:\robin\Selise-TMS\TMS.API\TMS.API
+2025-08-24 19:11:03.300 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7184/TMS/api/Task - application/json 249
+2025-08-24 19:11:03.555 +06:00 [INF] Executing endpoint 'WebApplication1.Controllers.TaskController.CreateTask (TMS.API)'
+2025-08-24 19:11:03.584 +06:00 [INF] Route matched with {action = "CreateTask", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateTask(TMS.Application.features.Task.Post.CreateTaskCommand) on controller WebApplication1.Controllers.TaskController (TMS.API).
+2025-08-24 19:11:03.595 +06:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-08-24 19:11:03.659 +06:00 [INF] Creating task with title: 1st task
+2025-08-24 19:11:05.511 +06:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."CreatedOn", t."Description", t."ModifiedOn", t."Name"
+FROM "Teams" AS t
+WHERE t."Id" = @__p_0
+LIMIT 1
+2025-08-24 19:11:05.564 +06:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2025-08-24 19:11:05.579 +06:00 [INF] Executed action WebApplication1.Controllers.TaskController.CreateTask (TMS.API) in 1985.4386ms
+2025-08-24 19:11:05.590 +06:00 [INF] Executed endpoint 'WebApplication1.Controllers.TaskController.CreateTask (TMS.API)'
+2025-08-24 19:11:05.605 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7184/TMS/api/Task - 404 null text/plain; charset=utf-8 2312.6199ms
+2025-08-24 19:11:11.911 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7184/TMS/api/Task - application/json 249
+2025-08-24 19:11:11.957 +06:00 [INF] Executing endpoint 'WebApplication1.Controllers.TaskController.CreateTask (TMS.API)'
+2025-08-24 19:11:11.959 +06:00 [INF] Route matched with {action = "CreateTask", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateTask(TMS.Application.features.Task.Post.CreateTaskCommand) on controller WebApplication1.Controllers.TaskController (TMS.API).
+2025-08-24 19:11:11.964 +06:00 [INF] Creating task with title: 1st task
+2025-08-24 19:11:16.950 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='1'], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."CreatedOn", t."Description", t."ModifiedOn", t."Name"
+FROM "Teams" AS t
+WHERE t."Id" = @__p_0
+LIMIT 1
+2025-08-24 19:11:17.977 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__Id_0='84976223-5a8f-4871-81fd-399980ae6560'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__Id_0
+LIMIT 1
+2025-08-24 19:11:20.909 +06:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='84976223-5a8f-4871-81fd-399980ae6560' (Nullable = false), @p1='2025-08-24T13:11:20.8091112+00:00' (DbType = DateTime), @p2='2e2e717d-9e5f-449b-bdb8-a334fc333513' (Nullable = false), @p3='complete it' (Nullable = false), @p4='2025-08-24T13:05:57.6590000Z' (DbType = DateTime), @p5=NULL (DbType = DateTime), @p6='1', @p7='1', @p8='1st task' (Nullable = false)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Tasks" ("AssignedToUserId", "CreatedOn", "CreatedUserId", "Description", "DueDate", "ModifiedOn", "Status", "TeamId", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+RETURNING "Id";
+2025-08-24 19:11:20.955 +06:00 [INF] Executing OkObjectResult, writing value of type 'TMS.Application.features.Task.Post.CreateTaskResponse'.
+2025-08-24 19:11:20.968 +06:00 [INF] Executed action WebApplication1.Controllers.TaskController.CreateTask (TMS.API) in 9005.3751ms
+2025-08-24 19:11:20.971 +06:00 [INF] Executed endpoint 'WebApplication1.Controllers.TaskController.CreateTask (TMS.API)'
+2025-08-24 19:11:20.979 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7184/TMS/api/Task - 200 null application/json; charset=utf-8 9067.9447ms
+2025-08-24 19:11:32.995 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7184/TMS/api/Task - null null
+2025-08-24 19:11:33.011 +06:00 [INF] Executing endpoint 'WebApplication1.Controllers.TaskController.GetAllTasks (TMS.API)'
+2025-08-24 19:11:33.028 +06:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllTasks(TMS.Application.features.Task.Get.ResourseParameter) on controller WebApplication1.Controllers.TaskController (TMS.API).
+2025-08-24 19:11:33.047 +06:00 [INF] Getting all tasks with resource: {"PageNumber":1,"PageSize":10,"OrderBy":"Title","SearchQuery":null,"$type":"ResourseParameter"}
+2025-08-24 19:11:33.097 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='10', @__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AssignedToUserId", t."CreatedOn", t."CreatedUserId", t."Description", t."DueDate", t."ModifiedOn", t."Status", t."TeamId", t."Title"
+FROM "Tasks" AS t
+ORDER BY t."Title"
+LIMIT @__p_1 OFFSET @__p_0
+2025-08-24 19:11:33.107 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TMS.Application.features.Task.Get.TaskResponse, TMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-24 19:11:33.115 +06:00 [INF] Executed action WebApplication1.Controllers.TaskController.GetAllTasks (TMS.API) in 83.9331ms
+2025-08-24 19:11:33.117 +06:00 [INF] Executed endpoint 'WebApplication1.Controllers.TaskController.GetAllTasks (TMS.API)'
+2025-08-24 19:11:33.126 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7184/TMS/api/Task - 200 null application/json; charset=utf-8 130.0648ms
